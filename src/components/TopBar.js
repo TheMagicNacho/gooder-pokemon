@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
-// import Logo from './pocketMonsters.png';
-// import Image from 'material-ui-image';
+
+import PokemonLogo from "../img/PokemonLogo.png";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
@@ -18,12 +18,10 @@ export default function TopBar() {
 
             <Box
                 component="img"
-                sx={{height: 64, width: 64}}
+                sx={{height: 50, width: 100}}
                 alt="Pokemon"
-                src="null"
+                src={PokemonLogo}
             />
-
-
             </Grid>
             <Grid item xs={6}>
                 <SearchBar />
