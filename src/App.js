@@ -18,6 +18,7 @@ const url = `https://pokeapi.co/api/v2/pokemon?limit=100`; // the base url for s
 
 export default function App (){
   const [pokeData, setPokeData]= React.useState([]);
+  const searchRef = React.useRef();
 
   React.useEffect(()=>{
     async function fetchRandomPokemon(){
